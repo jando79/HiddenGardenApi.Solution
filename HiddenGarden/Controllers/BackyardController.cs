@@ -72,14 +72,14 @@ namespace HiddenGarden.Controllers
     [HttpGet("{id}")]
     public async Task<ActionResult<Backyard>> GetBackyard(int id)
     {
-      Backyard Backyard = await _db.Backyards.FindAsync(id);
+      Backyard backyard = await _db.Backyards.FindAsync(id);
 
-      if (Backyard == null)
+      if (backyard == null)
       {
         return NotFound();
       }
 
-      return Backyard;
+      return backyard;
     }
     
     // POST api/backyards
