@@ -17,7 +17,7 @@ namespace HiddenGarden.Controllers
 
     // GET: api/backyards?page=1&pagesize=20
     [HttpGet]
-    public async Task<IActionResult> GetBackyards( int id, string address, string service, string description, string instructions, int page = 1, int pageSize = 5)
+    public async Task<IActionResult> GetBackyards( int id, string address, string service, string description, string instructions, int page = 1, int pageSize = 6)
     {
       IQueryable<Backyard> query = _db.Backyards.AsQueryable();
 
