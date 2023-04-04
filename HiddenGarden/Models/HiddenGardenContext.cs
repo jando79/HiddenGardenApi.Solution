@@ -15,7 +15,8 @@ namespace HiddenGarden.Models
       builder.Entity<Backyard>()
         .HasData(
           new Backyard { BackyardId = 1, Service = "Fig trees", Description = "Free fig tree fruit", Address = "13704 SE Salmon St, Portland OR, 97233" , Instructions = "Pay $5, follow road signs"},
-          new Backyard { BackyardId = 2, Service = "Apple Trees", Description = "Free Apples", Address = "Bennelong Point, Sydney NSW 2000, Australia", Instructions = "Ask the receptionist for apples!"}
+          new Backyard { BackyardId = 2, Service = "Apple Trees", Description = "Free Apples", Address = "Bennelong Point, Sydney NSW 2000, Australia", Instructions = "Ask the receptionist for apples!"},
+          new Backyard { BackyardId = 3, Service = "Bread and Pastries", Description = "Day after baked goods", Address = "Pierre’s Bakery, Portland, OR", Instructions = "Come up to the window and ask for knock!"}
         );
     }
   }
