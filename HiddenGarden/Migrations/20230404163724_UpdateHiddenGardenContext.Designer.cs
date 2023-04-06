@@ -2,6 +2,7 @@
 using HiddenGarden.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HiddenGarden.Migrations
 {
     [DbContext(typeof(HiddenGardenContext))]
-    partial class HiddenGardenContextModelSnapshot : ModelSnapshot
+    [Migration("20230404163724_UpdateHiddenGardenContext")]
+    partial class UpdateHiddenGardenContext
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,9 +42,6 @@ namespace HiddenGarden.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("Service")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("UserId")
                         .HasColumnType("longtext");
 
                     b.HasKey("BackyardId");
@@ -75,7 +74,7 @@ namespace HiddenGarden.Migrations
                             BackyardId = 3,
                             Address = "Pierre’s Bakery, Portland, OR",
                             Description = "Day after baked goods",
-                            Instructions = "Come up to the window and ask for Pierre!",
+                            Instructions = "Come up to the window and ask for knock!",
                             Latitude = 0f,
                             Longitude = 0f,
                             Service = "Bread and Pastries"
