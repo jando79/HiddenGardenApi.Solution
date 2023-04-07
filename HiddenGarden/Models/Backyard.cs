@@ -9,5 +9,6 @@ namespace HiddenGarden.Models
     public float Latitude { get; set; }
     public float Longitude { get; set; }
     public string Instructions { get; set; }
+    public string UserId { get; set; }
   }
 }

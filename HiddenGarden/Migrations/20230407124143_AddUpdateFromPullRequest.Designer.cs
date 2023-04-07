@@ -2,6 +2,7 @@
 using HiddenGarden.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HiddenGarden.Migrations
 {
     [DbContext(typeof(HiddenGardenContext))]
-    partial class HiddenGardenContextModelSnapshot : ModelSnapshot
+    [Migration("20230407124143_AddUpdateFromPullRequest")]
+    partial class AddUpdateFromPullRequest
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
